@@ -1,0 +1,10 @@
+com\registro\usuarios\servicio\UsuarioServicio.class
+com\registro\usuarios\RegistroUsuariosSpringSecurityApplication.class
+com\registro\usuarios\controlador\RegistroControlador.class
+com\registro\usuarios\controlador\RegistroUsuarioControlador.class
+com\registro\usuarios\modelo\Usuario.class
+com\registro\usuarios\repositorio\UsuarioRepositorio.class
+com\registro\usuarios\servicio\UsuarioServicioImpl.class
+com\registro\usuarios\controlador\dto\UsuarioRegistroDTO.class
+com\registro\usuarios\modelo\Rol.class
+com\registro\usuarios\seguridad\SecurityConfiguration.class

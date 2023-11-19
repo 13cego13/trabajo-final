@@ -1,0 +1,699 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {  
+    max-width: 100%;  
+     overflow-x: hidden; 
+}
+
+body{
+    background-image: url(/img/cables.jpg);
+    background-size: cover;
+    top: 0 !important;
+}
+
+.animado{
+    opacity: 0;
+    transition: all 2s;
+}
+
+.mostrarIzquierda{
+    animation: mostrarIzquierda 1s ;
+}
+
+.animado2{
+    opacity: 0;
+    transition: all 2s;
+}
+
+.animado3{
+    opacity: 0;
+    transition: all 2s;
+}
+
+@keyframes mostrarIzquierda{
+    0%{
+        transform: translatex(-180px);
+    }
+    100%{
+        transform: translatex(0px);
+    }
+}
+
+.mostrarDerecha{
+    animation: mostrarDerecha 1s ;
+}
+
+@keyframes mostrarDerecha{
+    0%{
+        transform: translatex(180px);
+    }
+    100%{
+        transform: translatex(0px);
+    }
+}
+
+
+/*barra de navegacion*/
+
+
+header{
+    background-color: #242f25;
+    height: 65px;
+    width: 100%;
+    z-index: 300;
+    position: fixed;
+    opacity: 70%;
+}
+
+header:hover{
+    background-color: #042f07;
+    height: 65px;
+    width: 100%;
+    z-index: 300;
+    position: fixed;
+    opacity: 100%;
+    transition: all 300ms ease;
+}
+
+.action{
+    background: #5e6403;
+    transition: .5s;
+}
+
+.enlace{
+   position: absolute;
+   padding: 5px 5px;
+}
+
+.logo{
+    height: 60px;
+}
+
+header ul{
+    float: right;
+    margin-right: 10px;
+}
+
+header ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+
+header ul li a{
+    color: #f2f4d0;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+li a.active, li a:hover{
+    background: #5e6403;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+#google_translate_element {
+  display: inline-block; 
+  margin: 0px 10px;
+}
+
+
+.goog-te-combo {
+  margin: 0 !important; 
+  border: 1px solid #042f07; 
+  border-radius: 5px; 
+  padding: 5px; 
+}
+
+
+.goog-te-menu-value {
+  padding: 5px; 
+  background-color: black !important;
+  color: #042f07 !important;
+  
+}
+
+
+.goog-te-gadget-simple {
+	background-color: transparent !important;
+    border-left: #042f07 !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-right: #042f07 !important;
+    font-size: 10pt !important;
+    display: inline-block !important;
+    padding-top: none !important;
+    padding-bottom: 0 !important;
+    cursor: pointer !important;
+    color: #042f07 !important;
+}
+
+.goog-te-gadget-simple:hover {
+	background: #042f07 !important;
+    border-left: #042f07 !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-right: #042f07 !important;
+    font-size: 10pt !important;
+    display: inline-block !important;
+    padding-top: none !important;
+    padding-bottom: 0 !important;
+    cursor: pointer !important;
+    color: #042f07 !important;
+    transition: all 300ms ease;
+}
+
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed span {
+    text-decoration: none !important;
+    color: #f2f4d0 !important;
+}
+
+.goog-te-gadget-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/db/Google_Translate_Icon.png?20160129085523') !important;
+    background-position: center center !important; 
+    background-repeat: no-repeat !important;
+    background-size: contain !important; 
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+    width: 19px !important;
+    height: 19px !important;
+    margin-left: 5px;
+}
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+    display: none;
+}
+
+.VIpgJd-ZVi9od-ORHb {
+    display: none;
+    padding: 0;
+}
+
+/*main*/
+
+.carrusel-box{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.carrusel-box ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 10s infinite alternate ease-in-out;
+}
+
+.carrusel-box li{
+    width: 60%;
+    list-style: none;
+    position: relative;
+}
+
+.carrusel-box img{
+    width: 100%;
+    height: 350px;
+    border-radius: 1px;
+}
+
+@keyframes slide{
+
+   0%{margin-left: 0;}
+   20%{margin-left: 0;}
+
+   40%{margin-left: -100%;}
+   60%{margin-left: -100%;}
+
+   80%{margin-left: -200%;}
+   100%{margin-left: -200%;}
+}
+
+main h2{
+    text-align: center;
+    color: #f2f4d0;
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+
+.contenido-servcios{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+    backdrop-filter: none;
+    margin: 3% 5%;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+
+.proyectos-vista-previa {
+    border-radius: 5%;
+    padding: 3% 3%;
+    box-shadow: 16px 14px 20px #031801;
+    background:linear-gradient(rgba(246, 213, 3, 0.5),rgba(2, 27, 0, 0.5));
+    overflow: hidden;
+    position: relative;
+}
+
+.proyectos-vista-previa:hover{
+    background-color: #000001;
+    transition: all 0.5s ease;
+    margin: 10px;
+}
+
+.proyectos-vista-previa img{
+    width: 100%;
+    height: 60%;
+    border-radius: 5%;
+}
+
+.proyectos-vista-previa h3{
+    color: #f2f4d0;
+    font-size: 15px;
+}
+
+.proyectos-vista-previa button{
+    background: none;
+    color: #f2f4d0;
+    border: solid 1px #f2f4d0;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-top: 5%;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 300ms ease; 
+}
+
+.proyectos-vista-previa button:hover{
+    background-color: #899206;
+    border: solid 1px #899206;
+    border-radius: 10px;
+    box-shadow: 8px 7px 10px #000001;
+}
+
+.descripcion-servicios{
+    margin: auto;
+    display: grid;
+    padding-bottom: 10px;
+    margin: 3% 5%;
+}
+
+.descripcion-servicios-izquierda{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    background-color: #757a0a;
+    border-radius: 75px;
+    margin-top: 40px;
+    margin-right: 200px;
+    box-shadow: 16px 14px 20px #0d5206;
+}
+
+.descripcion-servicios-izquierda:hover{
+    background-color: rgb(201, 156, 7);
+    margin: 20px 0px;
+}
+
+.descripcion-servicios-derecha{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    align-items: center;
+    background-color: #093c0d;
+    border-radius: 75px;
+    margin-top: 40px;
+    margin-left: 200px;
+    box-shadow: -16px 14px 20px #7f8d04;
+}
+
+.descripcion-servicios-derecha:hover{
+    background-color: rgb(6, 15, 97);
+    margin: 20px 0px;
+}
+
+.descripcion-servicios-izquierda h3{
+    color: #000000;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.descripcion-servicios-derecha h3{
+    color: #f2f4d0;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    text-align: left;
+    align-items: left;
+}
+
+.descripcion-servicios-izquierda p{
+    color: #000000;
+    font-size: 15px;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.descripcion-servicios-derecha p{
+    color: #f2f4d0;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.margen-imagen-i{
+    border: #132e15 1px solid;
+    border-radius: 15%;
+    margin: 25px;
+}
+
+.margen-imagen-d{
+    border: #899206 1px solid;
+    border-radius: 15%;
+    margin: 25px;
+}
+
+
+
+.descripcion-servicios-izquierda img{
+    width: 85%;
+    margin: 5%;
+    border-radius: 15%;
+    box-shadow: -26px -20px 20px #000001;
+    
+}
+
+
+.descripcion-servicios-derecha img{
+    width: 85%;
+    margin: 5%;
+    border-radius: 15%;
+    box-shadow: 26px -20px 20px #000001;
+}
+
+
+/*footer*/
+
+.pie-pagina{
+    width: 100%;
+    background-color: #042f07;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding:  45px 0;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #f2f4d0;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.enlaces-footer{
+    text-align: left;
+}
+
+.enlaces-footer a{
+    color: #f2f4d0;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+.enlaces-footer a:hover{
+    background-color: #899206;
+    width:150px;
+    border-radius: 1px;
+    margin-left: 20px;
+}
+
+.pie-pagina .grupo-1 .sociales a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #042f07;
+    margin-right: 10px;
+    background-color: black;
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 50%;
+}
+
+.pie-pagina .grupo-1 .sociales a:hover{
+    color: #899206;
+    margin: 6px;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #042f07;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+/*responsive */
+
+@media (max-width: 700px){
+    .logo{
+        position: absolute;
+        top: 0;
+        margin-top: 5px;
+    }
+
+
+    /*barra navegacion*/
+
+    header{
+        background-color: #042f07;
+        height: 80px;
+        width: 100%;
+        position: static;
+        opacity: 100%;
+    }
+
+    header:hover{
+        background-color: #042f07;
+        height: 80px;
+        width: 100%;
+        z-index: 300;
+        position: static;
+        opacity: none;
+    }
+
+    header ul{
+        z-index: 300;
+        position: fixed;
+        width: 60%;
+        height: 100%;
+        background-color: #042f07;
+        top: 0px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+     header ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    header ul li a{
+        font-size: 20px;
+    }
+
+    .checkbtn{
+        display: block;
+        margin-right: 20px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+
+    /*main*/
+
+    
+    .carrusel-box{
+        width: 100%;
+        overflow: hidden;
+        margin-top: -150px;
+        padding-top: -150px;
+    }
+
+    .carrusel-box img{
+        height: 100%;
+    }
+
+    .contenido-servcios{
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 10px;
+        text-align: center;
+        backdrop-filter: none;
+        margin: 3% 5%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .proyectos-vista-previa {
+    border: solid 1px #042f07;
+    background:linear-gradient(rgba(246, 213, 3, 0.5),rgba(2, 27, 0, 0.5));
+    border-radius: 5%;
+    padding: 3% 3%;
+    background-color: #000001;
+    box-shadow: 16px 14px 20px #000001;
+    height: 300px;
+    margin: 0 25px;
+    overflow: hidden;
+    }
+
+
+    .descripcion-servicios-izquierda{
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        align-items: center;
+        background-color: #757a0a;
+        border-radius: 75px;
+        margin-top: 40px;
+        margin-right: 20px;
+        box-shadow: none;
+    }
+
+    .skiptranslate{
+        background: none;
+
+    }
+
+    .descripcion-servicios-derecha{
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        padding-bottom: 10px;
+        background-color: #093c0d;
+        border-radius: 75px;
+        margin-top: 40px;
+        margin-left: 40px;
+        box-shadow: none;
+        
+    }
+
+    .descripcion-servicios-izquierda img{
+        width: 85%;
+        margin: 5%;
+        border-radius: 15%;
+        box-shadow: none;
+    }
+    
+    
+    .descripcion-servicios-derecha img{
+        width: 85%;
+        margin: 5%;
+        border-radius: 15%;
+        box-shadow: none;
+    }
+
+    .descripcion-servicios-izquierda h3{
+        color: #000000;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    
+    .descripcion-servicios-derecha h3{
+        margin-top: 20px;
+        padding: 10px;
+        color: #f2f4d0;
+        margin-bottom: 5px;
+        text-align: center;
+        align-items: left;
+    }
+    
+    .descripcion-servicios-izquierda p{
+        color: #000000;
+        font-size: 15px;
+        text-align: center;
+        margin-right: 10px;
+    }
+    
+    .descripcion-servicios-derecha p{
+        color: #f2f4d0;
+        font-size: 15px;
+        text-align: center;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    /*footer*/
+
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0;
+    }
+
+}
+
+
+
